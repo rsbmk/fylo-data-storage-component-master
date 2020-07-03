@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors */
+  /* Primary */
+
+  --GradientBar1: hsl(6, 100%, 80%);
+  --GradientBar2: hsl(335, 100%, 65%);
+  /* Neutral */
+
+  --DarkBlue: hsl(228, 56%, 26%);
+  --PaleBlue: hsl(243, 100%, 93%);
+  --GrayishBlue: hsl(229, 7%, 55%);
+  --VeryDarkBlue: hsl(229, 57%, 11%);
+  --veryDarkBlueTrans: hsla(229, 57%, 11%, 0.7);
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background: url(/images/bg-mobile.png) no-repeat;
+  background-size: cover;
+}
+.card {
+  background-color: var(--DarkBlue);
+}
+/*FIRST CARD*/
+.card-logo {
+  width: 80vw;
+  height: 23vh;
+  margin: 22vh auto 20px auto;
+  border-radius: 10px 90px 10px 10px;
+}
+.wrapper-logo {
+  display: inline-block;
+  margin: 30px 0 20px 50px;
+}
+.wrapper-icons {
+  display: flex;
+  margin: 0 0 0 25px;
+}
+.icons {
+  margin-left: 20px;
+  padding: 10px 13px;
+  border-radius: 10px;
+  background-color: var(--VeryDarkBlue);
+}
+/*SECOND CARD*/
+.card-bar {
+  width: 80vw;
+  height: 22vh;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+  color: var(--PaleBlue);
+  padding-top: 30px;
+}
+.tittle-bar {
+  font-size: 0.75em;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.bar-shadow {
+  width: 85%;
+  height: 14px;
+  border-radius: 20px;
+  margin: 0 auto 10px auto;
+  background-color: var(--veryDarkBlueTrans);
+}
+.bar {
+  top: 2px;
+  left: 2px;
+  width: 80%;
+  height: 10px;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    var(--GradientBar1),
+    var(--GradientBar2)
+  );
+  border-radius: 20px;
+}
+.circle {
+  top: 1px;
+  width: 8px;
+  left: 97.5%;
+  height: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--PaleBlue);
+}
+.gb {
+  font-size: 1em;
+  column-count: 2;
+  column-gap: 130px;
+  margin-left: 30px;
+}
+/*THIRD CARD*/
+.gb-card {
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+  left: 80px;
+  top: 20px;
+  background-color: white;
+  color: var(--GrayishBlue);
+}
+.number {
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-right: 5px;
+  color: var(--VeryDarkBlue);
+}
+@media screen and (min-width: 480px) {
+  body {
+    background: white;
+  }
+  .wrapper-page {
+    width: 90vw;
+    height: 85vh;
+    display: flex;
+    margin: 4% auto;
+    background: url(/images/bg-desktop.png) no-repeat;
+    background-size: 100% 50%;
+    background-position: bottom center;
+    background-color: var(--VeryDarkBlue);
+  }
+  .card-logo {
+    width: 25vw;
+    top: 35%;
+    left: 10%;
+    position: relative;
+    margin: 0 auto 0 auto;
+  }
+  .card-bar {
+    width: 35vw;
+    top: 37%;
+    right: 5%;
+    position: relative;
+  }
+  .tittle-bar {
+    text-align: left;
+    margin: 0 0 15px 35px;
+  }
+  .gb {
+    column-gap: 230px;
+    margin-left: 38px;
+  }
+  .gb-card {
+    left: 320px;
+    top: -140px;
+    position: relative;
+    padding: 10px 10px;
+    font-size: 0.75em;
+  }
+}
