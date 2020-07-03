@@ -84,7 +84,7 @@ body {
 .circle {
   top: 1px;
   width: 8px;
-  left: 97%;
+  left: 97, 5%;
   height: 8px;
   position: relative;
   border-radius: 50%;
@@ -157,6 +157,6 @@ body {
     font-size: 0.75em;
   }
   .circle {
-    left: 97.5%;
+    left: 97%;
   }
 }
